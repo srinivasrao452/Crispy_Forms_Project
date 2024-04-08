@@ -6,6 +6,7 @@ from jobapp.models import Employee,Position,Post
 class EmployeeAdmin(admin.ModelAdmin):
     list_display = ['id','fullname','mobile','emp_code','position']
     search_fields = ['fullname']
+    list_filter = ['position']
 
 @admin.register(Position)
 class PositionAdmin(admin.ModelAdmin):
