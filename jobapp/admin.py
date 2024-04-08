@@ -5,7 +5,6 @@ from jobapp.models import Employee,Position,Post
 @admin.register(Employee)
 class EmployeeAdmin(admin.ModelAdmin):
     list_display = ['id','fullname','mobile','emp_code','position']
-    ordering = ['-id']
 
 @admin.register(Position)
 class PositionAdmin(admin.ModelAdmin):
